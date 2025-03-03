@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Contact Us
+  body
+    h1 Contact Us
+    p If you have any questions, feel free to reach out!
+    form(action="/contact", method="POST")
+      div
+        label(for="name") Name:
+        input(type="text", id="name", name="name", required)
+      div
+        label(for="email") Email:
+        input(type="email", id="email", name="email", required)
+      div
+        label(for="message") Message:
+        textarea(id="message", name="message", required)
+      div
+        button(type="submit") Send Message
+    a(href="/") Back to Home
